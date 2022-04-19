@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="154dp"
+        android:layout_above="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="492dp"
+        android:lineSpacingExtra="24sp"
+        android:text="Welcome to the project of Sara 201236"
+        android:textAlignment="center"
+        android:textColor="#4C63E1"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="81dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="126dp"
+        android:text="Pick a Date" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="347dp"
+        android:layout_height="54dp"
+        android:entries="@array/options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="254dp"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="575dp"/>
+
+    <TextView
+        android:id="@+id/temperaturetextView"
+        android:layout_width="203dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="536dp"
+        android:text="temperature"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/humiditytextView"
+        android:layout_width="206dp"
+        android:layout_height="64dp"
+        android:layout_above="@+id/citytextView"
+        android:layout_marginBottom="332dp"
+        android:text="humidity"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/citytextView"
+        android:layout_width="203dp"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="254dp"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="575dp"
+        android:text="City" />
+
+    <ImageView
+        android:id="@+id/weatherbackground"
+        android:layout_width="359dp"
+        android:layout_height="308dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="242dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</RelativeLayout>
